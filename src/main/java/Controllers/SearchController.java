@@ -30,9 +30,9 @@ public class SearchController {
     public String displaySearchResults(Model model, @RequestParam String searchType, @RequestParam String searchTerm){
         Iterable<RecordsList> records;
         if(searchTerm.toLowerCase().equals("all")|| searchTerm.equals("")){
-            records = recordsRepository.findAll();
+            records = (Iterable<RecordsList>) RecordsRepository.findAll();
         } else {
-            records = CategoryData.findByColumnAndValue(searchType, searchTerm, recordsRepository.findAll());
+            records = CategoryData.findByColumnAndValue(searchType, searchTerm, RecordsRepository.findAll());
         }
         model.addAttribute("columns", columnChoices);
         model.addAttribute("title", "Records with " + columnChoices.get(searchType) + ": " + searchTerm);
