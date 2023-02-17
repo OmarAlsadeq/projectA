@@ -1,2 +1,4 @@
-package Controllers;public class SearchController {
+package Controllers;
+
+public class SearchController {
 }
