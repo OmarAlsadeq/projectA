@@ -1,8 +1,10 @@
 package Controllers;
 
 import Models.User;
+
 import Models.data.RoleListRepository;
 import Models.data.UserListRepository;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -23,7 +25,10 @@ public class LandingPageController {
     private UserListRepository userListRepository;
 
     @Autowired
+
     private RoleListRepository roleRepository;
+
+
 
     @GetMapping("")
     public String index(Model model) {

@@ -5,7 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="29f93114-ecca-4abe-8476-b8b68c5e0386" name="Changes" comment="">
+
       <change beforePath="$PROJECT_DIR$/src/main/java/Models/data/UserListRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Models/data/UserListRepository.java" afterDir="false" />
+
+      <change afterPath="$PROJECT_DIR$/src/main/java/Controllers/CategoryListController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controllers/LandingPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controllers/LandingPageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controllers/SearchController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controllers/SearchController.java" afterDir="false" />
+
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +30,9 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
             <expand>
