@@ -7,9 +7,18 @@ version '1.0-SNAPSHOT'
 
 repositories {
     mavenCentral()
+    maven {
+        url 'https://repo.clojars.org'
+        name 'Clojars'
+    }
 }
 
 dependencies {
+    implementation 'com.lugew.winsim:entity:1.0.2-RELEASE'
+    implementation 'net.namekdev.entity_tracker:artemis-entity-tracker:0.3.0'
+    implementation 'se.jguru.shared.test.entity:jguru-shared-entity-test:0.9.1'
+    implementation 'com.gu:content-entity-thrift:2.2.1'
+    implementation 'entity:entity-core:0.1.2'
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
 }
