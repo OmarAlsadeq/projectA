@@ -1,7 +1,6 @@
 package Models.data;
 
 
-
 public interface CategoryListRepository {
 
     static Object findAll() {
