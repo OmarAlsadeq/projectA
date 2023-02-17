@@ -1,8 +1,11 @@
 package Models.data;
 
-import Models.User;
+import Models.UserList;
+import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
 
-public interface UserListRepository {
-    static void save(User newUser) {
-    }
+@Repository
+public interface UserListRepository extends CrudRepository<UserList, Integer> {
+
+
 }
