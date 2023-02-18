@@ -1,5 +1,6 @@
 package Models.data;
 
+import Models.Role;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
