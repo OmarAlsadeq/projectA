@@ -14,6 +14,7 @@ repositories {
 }
 
 dependencies {
+    implementation 'org.springframework.security:spring-security-crypto'
     implementation 'com.lugew.winsim:entity:1.0.2-RELEASE'
     implementation 'net.namekdev.entity_tracker:artemis-entity-tracker:0.3.0'
     implementation 'se.jguru.shared.test.entity:jguru-shared-entity-test:0.9.1'
