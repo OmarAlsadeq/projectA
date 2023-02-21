@@ -1,4 +1,5 @@
 
+import Controllers.AuthenticationController;
 import Models.User;
 import Models.data.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
