@@ -14,6 +14,12 @@ repositories {
 }
 
 dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    implementation 'mysql:mysql-connector-java'
+    implementation 'org.springframework.boot:spring-boot-starter-validation'
+    implementation 'org.springframework.security:spring-security-crypto'
     implementation 'org.springframework.security:spring-security-crypto'
     implementation 'com.lugew.winsim:entity:1.0.2-RELEASE'
     implementation 'net.namekdev.entity_tracker:artemis-entity-tracker:0.3.0'
