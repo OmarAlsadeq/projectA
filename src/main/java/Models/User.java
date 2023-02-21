@@ -1,6 +1,7 @@
 package Models;
 
 import org.jetbrains.annotations.NotNull;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
 
 import javax.persistence.Entity;
@@ -53,7 +54,7 @@ public class User extends AbstractBaseClass {
 
     private static final BCryptPasswordEncoder encoder = new BCryptPasswordEncoder();
     public User(String username, String password){};
-    public User (String username, String password, String firstName, String lastName, Integer phoneNumber, String email, String password, Role role, List <Relationship> relationships) {
+    public User (String username, String firstName, String lastName, Integer phoneNumber, String email, String password, Role role, List <Relationship> relationships) {
         super();
         this.username = username;
         this.pwHash = encoder.encode(password);
