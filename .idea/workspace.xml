@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="29f93114-ecca-4abe-8476-b8b68c5e0386" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/fragment.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Models/dto/LoginFormDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Models/dto/RegisterFormDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Models/dto/UserRelationshipDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -55,8 +57,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="HTML File" />
+        <option value="Thymeleaf" />
+        <option value="Class" />
       </list>
     </option>
   </component>
