@@ -1,10 +1,8 @@
 package org.example.demo.Controllers;
 
 import org.example.demo.Models.User;
-
 import org.example.demo.Models.data.RelationshipListRepository;
 import org.example.demo.Models.data.RoleListRepository;
-
 import org.example.demo.Models.data.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -39,15 +37,7 @@ public class LandingPageController {
         model.addAttribute("users");
         return "admin/add";
     }
-    @GetMapping("adduser")
-    private String displayAddUserForm(Model model){
-        model.addAttribute("title", "Add User");
-        model.addAttribute("user", new User());
-        model.addAttribute("role", userRepository.findAll());
-        model.addAttribute("relationship", userRepository.findAll());
 
-        return "admin/add";
-    }
 
     @PostMapping("adduser")
     public String processAddUserForm(@ModelAttribute @Valid User newUser, Errors errors, Model model){
@@ -60,4 +50,24 @@ public class LandingPageController {
         return "redirect:";
     }
 
+}
+
+public interface Guest {
+    void foo();
+}
+
+public interface Editor extends Guest {
+    void bar();
+}
+
+public interface Admin extends Editor {
+    @GetMapping("adduser")
+    private String displayAddUserForm(Model model){
+        model.addAttribute("title", "Add User");
+        model.addAttribute("user", new User());
+        model.addAttribute("role", UserRepository.findAll());
+        model.addAttribute("relationship", UserRepository.findAll());
+
+        return "admin/add";
+    }
 }
