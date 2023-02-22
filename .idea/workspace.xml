@@ -5,50 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="29f93114-ecca-4abe-8476-b8b68c5e0386" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/demo/Controllers/FileUploadController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/demo/FileUploadDBServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/demo/Models/StorageException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/demo/Models/StorageFileNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/demo/Models/StorageService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/demo/Models/dto/FileCategoryDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/demo/Models/dto/UserRelationshipDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/Message.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/Upload.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/demo/src/main/java/com/example/demo/DemoApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/demo/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/demo/src/test/java/com/example/demo/DemoApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/AuthenticationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/demo/AuthenticationFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controllers/AuthenticationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/demo/AuthenticationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controllers/CategoryListController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/demo/Controllers/CategoryListController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controllers/LandingPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/demo/Controllers/LandingPageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controllers/RepositoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/demo/Controllers/RepositoryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controllers/SearchController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/demo/Controllers/SearchController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/demo/Controllers/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DemoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/demo/DemoApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Models/AbstractBaseClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/demo/Models/AbstractBaseClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Models/CategoryData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/demo/Models/CategoryData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Models/RecordsList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/demo/Models/RecordsList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Models/Relationship.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/demo/Models/Relationship.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Models/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/demo/Models/Role.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/demo/Models/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Models/UserList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/demo/Models/UserList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Models/data/CategoryListRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/demo/Models/data/CategoryListRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Models/data/LandingPageRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/demo/Models/data/LandingPageRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Models/data/RecordsRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/demo/Models/data/RecordsRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Models/data/RelationshipListRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/demo/Models/data/RelationshipListRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Models/data/RoleListRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/demo/Models/data/RoleListRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Models/data/UserListRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Models/data/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/demo/Models/data/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/WebApplicationConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/demo/WebApplicationConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/demo/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/Relationships/addrelationship.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/Relationships/addrelationship.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/User/adduser.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/User/adduser.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,9 +27,6 @@
         <task path="$PROJECT_DIR$">
           <activation />
         </task>
-        <task path="$PROJECT_DIR$">
-          <activation />
-        </task>
         <projects_view>
           <tree_state>
             <expand>
@@ -84,14 +39,12 @@
                 <item name="ProjectA" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
               </path>
-
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="ProjectA" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
                 <item name="application" type="c8890929:TasksNode$1" />
               </path>
-
             </expand>
             <select />
           </tree_state>
@@ -155,7 +108,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.projectA [bootRun]">
+  <component name="RunManager">
     <configuration name="projectA [bootRun]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
