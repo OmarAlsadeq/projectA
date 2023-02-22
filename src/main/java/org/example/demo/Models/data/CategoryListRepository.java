@@ -1,14 +1,15 @@
 package org.example.demo.Models.data;
 
-import jdk.jfr.Category;
-import org.springframework.data.repository.CrudRepository;
-import org.springframework.stereotype.Repository;
 
-import java.util.Locale;
+import org.springframework.stereotype.Repository;
 
 
 @Repository
-public interface CategoryListRepository extends CrudRepository<Category, Integer> {
+public interface CategoryListRepository {
+
+    static Object findAll() {
+        return null;
+    }
     // these things extend the CrudRepository built in thing.
 
 }
