@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http:/>/www.thymeleaf.org/">
+<html lang="en" xmlns:th="http://www.thymeleaf.org/">
 <head th:replace="fragments :: head"></head>
 <body class="container  body-content">
 <h1>Add User</h1>
@@ -30,6 +30,7 @@
                 <input class="form-control" th:field="${user.phone}" />
                 <span th:errors="${user.phone}" class="error"></span>
             </li>
+        </ul>
     </div>
 
     <div class="form-group">

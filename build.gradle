@@ -1,9 +1,12 @@
 plugins {
+    id 'org.springframework.boot' version '2.2.2.RELEASE'
+    id 'io.spring.dependency-management' version '1.0.8.RELEASE'
     id 'java'
 }
 
-group 'org.example'
-version '1.0-SNAPSHOT'
+group = 'org.example'
+version = '1.0-SNAPSHOT'
+sourceCompatibility = '11'
 
 repositories {
     mavenCentral()
@@ -28,8 +31,11 @@ dependencies {
     implementation 'entity:entity-core:0.1.2'
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+
+    //annotationProcessor 'org.projectlombok:lombok:1.16.16'
 }
 
 test {
     useJUnitPlatform()
+
 }
