@@ -1,8 +1,8 @@
 package org.example.demo.Controllers;
 
 import org.example.demo.Models.User;
-import org.example.demo.Models.data.RelationshipListRepository;
 import org.example.demo.Models.data.RoleListRepository;
+
 import org.example.demo.Models.data.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -21,53 +21,33 @@ import javax.validation.Valid;
 public class LandingPageController {
 
     @Autowired
-    private UserRepository userRepository;
+    private UserRepository userListRepository;
 
     @Autowired
+
     private RoleListRepository roleRepository;
 
-    @Autowired
-    private RelationshipListRepository relationshipListRepository;
 
 
-
-    @RequestMapping("")
+    @GetMapping("")
     public String index(Model model) {
-        model.addAttribute("title", "All Users");
-        model.addAttribute("users");
+        model.addAttribute("title", "All User");
         return "admin/add";
     }
 
-
-    @PostMapping("adduser")
+    @GetMapping("adduser")
+    public String displayAddUserForm(Model model) {
+        model.addAttribute("title", "Add User");
+        return "admin/add";
+    }
+    @PostMapping("add")
     public String processAddUserForm(@ModelAttribute @Valid User newUser, Errors errors, Model model){
         if(errors.hasErrors()){
             model.addAttribute("title", "Add User");
             return "admin/add";
         }
-
-        userRepository.save(newUser);
+        UserRepository.save(newUser);
         return "redirect:";
     }
 
-}
-
-public interface Guest {
-    void foo();
-}
-
-public interface Editor extends Guest {
-    void bar();
-}
-
-public interface Admin extends Editor {
-    @GetMapping("adduser")
-    private String displayAddUserForm(Model model){
-        model.addAttribute("title", "Add User");
-        model.addAttribute("user", new User());
-        model.addAttribute("role", UserRepository.findAll());
-        model.addAttribute("relationship", UserRepository.findAll());
-
-        return "admin/add";
-    }
 }
