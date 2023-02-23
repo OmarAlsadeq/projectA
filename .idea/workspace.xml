@@ -5,10 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="29f93114-ecca-4abe-8476-b8b68c5e0386" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Models/dto/LoginFormDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Models/dto/RegisterFormDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Models/dto/UserRelationshipDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controllers/CategoryListController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controllers/CategoryListController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controllers/SearchController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controllers/SearchController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Models/AbstractBaseClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Models/AbstractBaseClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Models/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Models/data/CategoryListRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Models/data/CategoryListRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Models/data/RecordsRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Models/data/RecordsRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/fragment.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/fragment.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,23 +35,7 @@
         </task>
         <projects_view>
           <tree_state>
-            <expand>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="ProjectA" type="f1a62948:ProjectNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="ProjectA" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="ProjectA" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="build" type="c8890929:TasksNode$1" />
-              </path>
-            </expand>
+            <expand />
             <select />
           </tree_state>
         </projects_view>
@@ -89,6 +77,7 @@
     "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "last_opened_file_path": "C:/Users/asylu/JavaProjects/projectA/src/main",
     "settings.editor.selected.configurable": "editor.reader.mode"
   }

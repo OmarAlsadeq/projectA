@@ -1,8 +1,10 @@
 package Models.data;
 
-public interface RecordsRepository {
+import Models.RecordsList;
+import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
 
-    static Object findAll() {
-        return null;
-    }
+@Repository
+public interface RecordsRepository extends CrudRepository<RecordsList, Integer> {
+
 }

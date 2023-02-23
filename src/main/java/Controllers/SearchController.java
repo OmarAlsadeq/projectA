@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import static Controllers.CategoryListController.columnChoices;
+import static Models.data.RecordsRepository.*;
 
 @Controller
 @RequestMapping("search")
@@ -30,7 +31,7 @@ public class SearchController {
     public String displaySearchResults(Model model, @RequestParam String searchType, @RequestParam String searchTerm){
         Iterable<RecordsList> records;
         if(searchTerm.toLowerCase().equals("all")|| searchTerm.equals("")){
-            records = (Iterable<RecordsList>) RecordsRepository.findAll();
+            records = RecordsRepository.findAll();
         } else {
             records = CategoryData.findByColumnAndValue(searchType, searchTerm, RecordsRepository.findAll());
         }

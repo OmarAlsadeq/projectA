@@ -16,10 +16,19 @@ public abstract class AbstractBaseClass {
     @GeneratedValue
     private int id;
 
+
+
     @Column(unique = true)
     @NotBlank(message="please provide a name.")
     @Size(min = 3, max = 100, message = "name must contain between 3 and 100 characters")
     private String name;
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
 
     public int getId() { return id; }
 

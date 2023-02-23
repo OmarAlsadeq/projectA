@@ -53,7 +53,6 @@ public class User extends AbstractBaseClass {
     // @Column(name = "relationship", nullable = false, )
 
     private static final BCryptPasswordEncoder encoder = new BCryptPasswordEncoder();
-    public User(String username, String password){};
     public User (String username, String firstName, String lastName, Integer phoneNumber, String email, String password, Role role, List <Relationship> relationships) {
         super();
         this.username = username;
