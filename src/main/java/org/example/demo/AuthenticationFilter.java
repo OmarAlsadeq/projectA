@@ -1,5 +1,6 @@
 package org.example.demo;
 
+import org.example.demo.Controllers.AuthenticationController;
 import org.example.demo.Models.User;
 import org.example.demo.Models.data.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;

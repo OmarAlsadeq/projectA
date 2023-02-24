@@ -3,7 +3,7 @@ package org.example.demo.Controllers;
 
 import org.example.demo.Models.CategoryData;
 import org.example.demo.Models.RecordsList;
-import org.example.demo.Models.data.RecordsRepository;
+import org.example.demo.Models.data.FilesRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -18,7 +18,7 @@ import static org.example.demo.Controllers.CategoryListController.columnChoices;
 public class SearchController {
 
     @Autowired
-    private RecordsRepository recordsRepository;
+    private FilesRepository filesRepository;
 
     @RequestMapping("")
     public String search(Model model) {
@@ -30,9 +30,9 @@ public class SearchController {
     public String displaySearchResults(Model model, @RequestParam String searchType, @RequestParam String searchTerm){
         Iterable<RecordsList> records;
         if(searchTerm.toLowerCase().equals("all")|| searchTerm.equals("")){
-            records = (Iterable<RecordsList>) RecordsRepository.findAll();
+            records = (Iterable<RecordsList>) FilesRepository.findAll();
         } else {
-            records = CategoryData.findByColumnAndValue(searchType, searchTerm, RecordsRepository.findAll());
+            records = CategoryData.findByColumnAndValue(searchType, searchTerm, FilesRepository.findAll());
         }
         model.addAttribute("columns", columnChoices);
         model.addAttribute("title", "Records with " + columnChoices.get(searchType) + ": " + searchTerm);
@@ -40,4 +40,6 @@ public class SearchController {
 
         return "search";
     }
+
+    delete this when you get it.
 }

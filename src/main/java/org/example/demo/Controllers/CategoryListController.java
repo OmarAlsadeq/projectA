@@ -1,7 +1,7 @@
 package org.example.demo.Controllers;
 
 import org.example.demo.Models.data.CategoryListRepository;
-import org.example.demo.Models.data.RecordsRepository;
+import org.example.demo.Models.data.FilesRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -17,7 +17,7 @@ public class CategoryListController {
     CategoryListRepository categoryListRepository;
 
     @Autowired
-    RecordsRepository recordsRepository;
+    FilesRepository filesRepository;
 
     static HashMap<String, String> columnChoices = new HashMap<>();
 
@@ -30,7 +30,7 @@ public class CategoryListController {
     @RequestMapping("")
     public String CategoryList(Model model) {
         model.addAttribute("categoryList", CategoryListRepository.findAll());
-        model.addAttribute("records", RecordsRepository.findAll());
+        model.addAttribute("records", FilesRepository.findAll());
         return "categoryList";
     }
 };

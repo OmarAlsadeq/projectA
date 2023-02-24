@@ -1,8 +1,6 @@
 package org.example.demo.Controllers;
 
 import org.example.demo.Models.User;
-
-import org.example.demo.Models.data.RelationshipListRepository;
 import org.example.demo.Models.data.RoleListRepository;
 
 import org.example.demo.Models.data.UserRepository;
@@ -23,40 +21,32 @@ import javax.validation.Valid;
 public class LandingPageController {
 
     @Autowired
-    private UserRepository userRepository;
+    private UserRepository userListRepository;
 
     @Autowired
+
     private RoleListRepository roleRepository;
 
-    @Autowired
-    private RelationshipListRepository relationshipListRepository;
 
 
-
-    @RequestMapping("")
+    @GetMapping("")
     public String index(Model model) {
-        model.addAttribute("title", "All Users");
-        model.addAttribute("users");
+        model.addAttribute("title", "All User");
         return "admin/add";
     }
+
     @GetMapping("adduser")
-    private String displayAddUserForm(Model model){
+    public String displayAddUserForm(Model model) {
         model.addAttribute("title", "Add User");
-        model.addAttribute("user", new User());
-        model.addAttribute("role", userRepository.findAll());
-        model.addAttribute("relationship", userRepository.findAll());
-
         return "admin/add";
     }
-
-    @PostMapping("adduser")
+    @PostMapping("add")
     public String processAddUserForm(@ModelAttribute @Valid User newUser, Errors errors, Model model){
         if(errors.hasErrors()){
             model.addAttribute("title", "Add User");
             return "admin/add";
         }
-
-        userRepository.save(newUser);
+        UserRepository.save(newUser);
         return "redirect:";
     }
 
