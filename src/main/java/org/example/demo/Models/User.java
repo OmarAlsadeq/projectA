@@ -15,14 +15,6 @@ import java.util.List;
 public class User extends AbstractBaseClass {
 //not sure whether to use @Column(nullable-false) or @NotNull
 
-    //role grants permissions as an Admin, Editor, or Viewer
-    @ManyToOne
-    private Role role;
-
-    //relationship could be son, power of attorney, executor of estate, emergency contact, and...
-    @ManyToMany
-    private List<Relationship> relationships;
-
 
 
     @NotBlank
@@ -57,7 +49,7 @@ public class User extends AbstractBaseClass {
     //public User() {    }
 
     //public User(String username, String password){};
-    public User (String username, String firstName, String lastName, Integer phoneNumber, String email, String password, Role role, List <Relationship> relationships) {
+    public User (String username, String firstName, String lastName, Integer phoneNumber, String email, String password) {
         super();
         this.username = username;
         this.pwHash = encoder.encode(password);
@@ -65,10 +57,6 @@ public class User extends AbstractBaseClass {
         this.firstName = firstName;
         this.lastName = lastName;
         this.phoneNumber = phoneNumber;
-        this.role = role;
-        this.relationships = relationships;
-
-
 
     }
 
@@ -102,16 +90,5 @@ public class User extends AbstractBaseClass {
         return lastName;
     }
 
-    public List<Relationship> getRelationships() {
-        return this.relationships;
-    }
-
-    public void setRelationships(List<Relationship> relationships) {
-        this.relationships = relationships;
-    }
-
-    public Role getRole () {return this.role;}
-
-    public void setRole(Role role) {this.role = role;}
 
 }

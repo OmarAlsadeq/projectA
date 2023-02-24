@@ -1,7 +1,6 @@
 package org.example.demo.Controllers;
 
 import org.example.demo.Models.User;
-import org.example.demo.Models.data.RoleListRepository;
 
 import org.example.demo.Models.data.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,10 +22,6 @@ public class LandingPageController {
     @Autowired
     private UserRepository userListRepository;
 
-    @Autowired
-
-    private RoleListRepository roleRepository;
-
 
 
     @GetMapping("")
@@ -46,7 +41,7 @@ public class LandingPageController {
             model.addAttribute("title", "Add User");
             return "admin/add";
         }
-        UserRepository.save(newUser);
+        //UserRepository.save(newUser);
         return "redirect:";
     }
 

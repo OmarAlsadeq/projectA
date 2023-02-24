@@ -1,8 +1,6 @@
 package org.example.demo.Controllers;
 
 import org.example.demo.Models.User;
-import org.example.demo.Models.data.RelationshipListRepository;
-import org.example.demo.Models.data.RoleListRepository;
 import org.example.demo.Models.data.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -21,11 +19,6 @@ public class UserController {
     @Autowired
     private UserRepository userRepository;
 
-    @Autowired
-    private RoleListRepository roleListRepository;
-
-    @Autowired
-    private RelationshipListRepository relationshipListRepository;
 
     @GetMapping("")
     private String index(Model model){
