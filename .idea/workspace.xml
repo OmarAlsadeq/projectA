@@ -5,6 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="29f93114-ecca-4abe-8476-b8b68c5e0386" name="Changes" comment="">
+
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+
       <change afterPath="$PROJECT_DIR$/src/main/java/org/example/demo/Models/dto/RegisterFormDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/demo/AuthenticationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/demo/Controllers/AuthenticationController.java" afterDir="false" />
@@ -12,6 +16,7 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/demo/Controllers/LandingPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/demo/Controllers/LandingPageController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/demo/Models/data/CategoryListRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/demo/Models/data/CategoryListRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/demo/Models/data/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/demo/Models/data/UserRepository.java" afterDir="false" />
+
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,6 +61,7 @@
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
                 <item name="build" type="c8890929:TasksNode$1" />
               </path>
+
             </expand>
             <select />
           </tree_state>
@@ -120,7 +126,11 @@
       <recent name="" />
     </key>
   </component>
+
+  <component name="RunManager">
+
   <component name="RunManager" selected="Gradle.projectA [build]">
+
     <configuration name="projectA [bootRun]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
